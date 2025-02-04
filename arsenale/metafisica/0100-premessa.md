@@ -2,8 +2,8 @@
 title: "Premessa Epistemologica"
 layout: page
 parent: Metafisica
-last_modified_date: 2025-02-04 12:26:00 CET
 nav_order: 1
+last_modified_date: 2025-02-04 12:26:00 CET
 ---
 
 # Premessa epistemologica: il silenzio come oggetto di indagine metafisica

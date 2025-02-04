@@ -2,8 +2,8 @@
 title: "Una genealogia del silenzio percepito"
 layout: page
 parent: "Premessa Epistemologica"
-last_modified_date: 2025-02-04 12:26:00 CET
 nav_order: 1
+last_modified_date: 2025-02-04 12:26:00 CET
 ---
 
 ## Le curve di Fletcher-Munson: una genealogia del silenzio percepito
