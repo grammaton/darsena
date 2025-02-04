@@ -1,6 +1,3 @@
-[submodule "sottomarini/silenzio"]
-	path = sottomarini/silenzio
-	url = https://gitlab.com/giuseppesilvi/silenzio.git
 [submodule "sottomarini/canto-alla-durata"]
 	path = sottomarini/canto-alla-durata
 	url = https://gitlab.com/giuseppesilvi/canto-alla-durata.git
