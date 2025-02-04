@@ -1,7 +1,7 @@
 ---
 title: "Una genealogia del silenzio percepito"
 layout: page
-parent: "Premessa epistemologica"
+parent: "Premessa Epistemologica"
 last_modified_date: 2025-02-04 12:26:00 CET
 nav_order: 1
 ---
@@ -37,12 +37,8 @@ forma stessa di questa soglia rivela che il "silenzio" è una categoria
 biologicamente e evolutivamente determinata, non una proprietà assoluta
 del mondo fisico.
 
-<figure id="default">
-<div class="center">
-<img src="1933-f-m-isofoniche.png" style="width:90.0%" />
-</div>
+![no-alignment]({{ '/sottomarini/silenzio/1933-f-m-isofoniche.png' | absolute_url }})
 <figcaption>Curve Isofoniche di Fletcher-Munson, 1933.</figcaption>
-</figure>
 
 ## L'evoluzione della comprensione: da Robinson-Dadson all'ISO 226:2003
 

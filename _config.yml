@@ -2,7 +2,7 @@ title: Porto Morto
 description: cadere sette volte, rialzarsi otto
 theme: just-the-docs
 
-url: grammaton.github.io/thedock
+url: grammaton.github.io/portomorto
 
 aux_links:
   LEAP: https://l-e-a-p.github.io
@@ -15,8 +15,8 @@ math: mathjax
 enable_copy_code_button: true
 
 callouts:
-  etimo:
-    title: Etimologia
+  glossario:
+    title: Glossario
     color: purple
 
 footer_content: 'Giuseppe Silvi'

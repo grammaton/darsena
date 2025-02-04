@@ -5,9 +5,30 @@ last_modified_date: 2025-02-04 11:41:00 CET
 nav_order: 1
 ---
 
-*dàrsena* s. f. (dall’arabo dār-ṣinā῾a «casa dell’industria; fabbrica», attraverso il dial. genovese). – La parte più interna e riparata di un porto, talvolta sede di bacini di carenaggio, circondata generalmente da banchine sulle quali trovano posto le attrezzature di carico e scarico, officine, magazzini, ecc.
+> Tese sugli alberi madide bandiere    
+di colori che mai ebbe alcun paese,    
+sventolano per stelle insudiciate,    
+per una luna verde nella coffa.    
+>    
+> Mondo d'acqua dai tempi dei pionieri!    
+Foreste d'onde ricoprono ogni via,    
+cade la luce a gocce dalla rete    
+di nuove strade nell'etere sospese.    
+>    
+> Correnti d'acqua sfogliano le bibbie    
+e segna notte l'ago della bussola.    
+Esce dai sogni e ne riluce l'oro,    
+il suo retaggio al mare resta in dono.    
+>    
+> Non una sola terra inesplorata!    
+Del marinaio le storie alla deriva,    
+poiché i ridenti, intrepidi pionieri    
+s'inabissarono in morto braccio d'acqua.
 
 ----
+
+{: .glossario }
+*dàrsena* s. f. (dall’arabo dār-ṣinā῾a «casa dell’industria; fabbrica», attraverso il dial. genovese). – La parte più interna e riparata di un porto, talvolta sede di bacini di carenaggio, circondata generalmente da banchine sulle quali trovano posto le attrezzature di carico e scarico, officine, magazzini, ecc.
 
 ## to do list
 
