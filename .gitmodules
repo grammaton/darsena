@@ -19,3 +19,6 @@
 [submodule "sottomarini/musebib"]
 	path = sottomarini/musebib
 	url = https://gitlab.com/giuseppesilvi/musebib.git
+[submodule "arsenale/metafisica"]
+	path = arsenale/metafisica
+	url = https://github.com/grammaton/metafisica.git
