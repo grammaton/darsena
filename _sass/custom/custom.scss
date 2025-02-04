@@ -1,0 +1,31 @@
+.epigraph {
+    font-style: italic;
+    text-align: right;
+    margin: 2em 0;
+    max-width: 60%;
+    margin-left: auto;
+}
+
+.epigraph p {
+    margin: 0; /* rimuove il margin di default */
+    line-height: 1.5; /* o il valore che preferisci */
+}
+
+.epigraph footer {
+    margin-top: 0.5em;
+}
+
+.footnotes {
+    font-size: 0.9rem;  /* o qualsiasi dimensione desideri */
+    margin-top: 2em;    /* spazio prima della sezione footnote */
+}
+
+.footnote-ref {         /* per il numero in apice nel testo */
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.footnote-backref {     /* per il simbolo ↩ che riporta al testo */
+    text-decoration: none;
+    font-size: 0.9em;
+}
