@@ -1,9 +1,13 @@
 ---
-title: Desk
+title: Darsena
 layout: home
 last_modified_date: 2025-02-04 11:41:00 CET
 nav_order: 1
 ---
+
+*dàrsena* s. f. (dall’arabo dār-ṣinā῾a «casa dell’industria; fabbrica», attraverso il dial. genovese). – La parte più interna e riparata di un porto, talvolta sede di bacini di carenaggio, circondata generalmente da banchine sulle quali trovano posto le attrezzature di carico e scarico, officine, magazzini, ecc.
+
+----
 
 ## to do list
 

@@ -1,5 +1,5 @@
-title: Dead Dock
-description: A place for all my writings attempts
+title: Porto Morto
+description: cadere sette volte, rialzarsi otto
 theme: just-the-docs
 
 url: grammaton.github.io/thedock
@@ -8,6 +8,8 @@ aux_links:
   LEAP: https://l-e-a-p.github.io
 
 heading_anchors: true
+
+math: mathjax
 
 # For copy button on code
 enable_copy_code_button: true
