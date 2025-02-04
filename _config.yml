@@ -5,6 +5,7 @@ theme: just-the-docs
 url: grammaton.github.io/portomorto
 
 aux_links:
+  FAUST: http://127.0.0.1:8000/dist/
   LEAP: https://l-e-a-p.github.io
 
 heading_anchors: true

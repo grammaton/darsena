@@ -29,3 +29,13 @@
     text-decoration: none;
     font-size: 0.9em;
 }
+
+.sidebar-footer {
+   font-style: italic;
+   text-align: right;
+   font-size: 0.75rem;      /* 12px se il root è 16px */
+   color: #666;             /* grigio medio per leggibilità */
+   line-height: 1.4;        /* spaziatura tra le righe */
+   padding: 1em;            /* padding interno */
+   font-weight: 300;        /* leggero */
+}
