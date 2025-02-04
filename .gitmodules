@@ -22,3 +22,6 @@
 [submodule "arsenale/metafisica"]
 	path = arsenale/metafisica
 	url = https://github.com/grammaton/metafisica.git
+[submodule "arsenale/pto"]
+	path = arsenale/pto
+	url = https://github.com/grammaton/pto.git

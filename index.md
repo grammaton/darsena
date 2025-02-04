@@ -30,6 +30,11 @@ s'inabissarono in morto braccio d'acqua.
 {: .glossario }
 *dàrsena* s. f. (dall’arabo dār-ṣinā῾a «casa dell’industria; fabbrica», attraverso il dial. genovese). – La parte più interna e riparata di un porto, talvolta sede di bacini di carenaggio, circondata generalmente da banchine sulle quali trovano posto le attrezzature di carico e scarico, officine, magazzini, ecc.
 
+## armatore
+
+Per creare una nuova nave dell'arsenale [parti da qui], poi aggiungi il nuovo
+elemento come `submodule` in `arsenale`.
+
 ## to do list
 
 1. cosa da fare uno
@@ -39,6 +44,11 @@ s'inabissarono in morto braccio d'acqua.
 ## appunti
 
 questa è una nota a piè pagina.[^1]
+
+----
+
+[parti da qui]: https://github.com/grammaton/bucintoro/generate
+
 
 ----
 
