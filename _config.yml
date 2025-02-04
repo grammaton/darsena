@@ -17,26 +17,6 @@ callouts:
     title: Etimologia
     color: purple
 
-# Define Jekyll collections
-collections:
-  st:
-    permalink: "/:collection/:path"
-    output: true
-  cad:
-    permalink: "/:collection/:path"
-    output: true
-
-just_the_docs:
-  # Define which collections are used in just-the-docs
-  collections:
-    # Reference the "tests" collection
-    cad:
-      name: cad
-      nav_fold: true  # note: this option is new in v0.4
-    st:
-      name: st
-      nav_fold: true  # note: this option is new in v0.4
-
 footer_content: 'Giuseppe Silvi'
 
 # Footer last edited timestamp
