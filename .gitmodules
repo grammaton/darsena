@@ -22,3 +22,6 @@
 [submodule "arsenale/pto"]
 	path = arsenale/pto
 	url = https://github.com/grammaton/pto.git
+[submodule "arsenale/faust-libraries"]
+	path = arsenale/faust-libraries
+	url = https://github.com/s-e-a-m/faust-libraries.git
