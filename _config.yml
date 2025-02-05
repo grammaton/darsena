@@ -1,8 +1,9 @@
+theme: just-the-docs
 title: Porto Morto
 description: cadere sette volte, rialzarsi otto
-theme: just-the-docs
-
-url: grammaton.github.io/portomorto
+baseurl: "/portomorto" # the subpath of your site, e.g. /blog
+url: "grammaton.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: grammaton/darsena # for github-metadata
 
 aux_links:
   FAUST: http://127.0.0.1:8000/dist/
@@ -17,6 +18,8 @@ enable_copy_code_button: true
 
 plugins:
   - jekyll-scholar
+  - jekyll-github-metadata
+
 callouts:
   glossario:
     title: Glossario
@@ -27,6 +30,10 @@ footer_content: 'Giuseppe Silvi'
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
 last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+liquid:
+  error_mode: strict
+  strict_filters: true
 
 scholar:
   style: apa

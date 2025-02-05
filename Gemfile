@@ -8,4 +8,5 @@ gem "just-the-docs", "0.10.1" # pinned to the current release
 
 group :jekyll_plugins do
   gem "jekyll-scholar"
+  gem "jekyll-github-metadata", ">= 2.15"
 end

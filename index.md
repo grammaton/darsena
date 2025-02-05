@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 {: .glossario }
-*dàrsena* s. f. (dall’arabo dār-ṣinā῾a «casa dell’industria; fabbrica», attraverso il dial. genovese). – La parte più interna e riparata di un porto, talvolta sede di bacini di carenaggio, circondata generalmente da banchine sulle quali trovano posto le attrezzature di carico e scarico, officine, magazzini, ecc.
+{{ site.data.glossario.darsena }}
 
 ## armatore
 
@@ -16,7 +16,7 @@ elemento come `submodule` in `arsenale`.
 ## to do list
 
 1. librerie SEAM
-2. faust.ide  
+2. faust.ide
 3. latex
 4. test hub pubblico/privato
 5. scan biblioteca
@@ -26,16 +26,15 @@ elemento come `submodule` in `arsenale`.
 
 ----
 
-[parti da qui]: https://github.com/grammaton/bucintoro/generate
+#### Vuoi contribuire? E allora daje!
 
-
-----
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="64" height="64" alt="{{ contributor.login }}"></a>
+  </li>
+{% endfor %}
+</ul>
 
 [^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[parti da qui]: https://github.com/grammaton/bucintoro/generate
