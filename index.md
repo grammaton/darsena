@@ -8,6 +8,14 @@ nav_order: 1
 {: .glossario }
 {{ site.data.glossario.darsena }}
 
+## approdo sicuro
+
+```
+git clone --recurse-submodules https://github.com/grammaton/darsena.git
+```
+
+Alcuni `submodules` sono privati, può accedere solamente chi può accedere.
+
 ## armatore
 
 Per creare una nuova nave dell'arsenale [parti da qui], poi aggiungi il nuovo
@@ -26,7 +34,7 @@ elemento come `submodule` in `arsenale`.
 
 ----
 
-#### Vuoi contribuire? E allora daje!
+#### Vuoi contribuire? [E allora daje](https://github.com/grammaton/darsena)!
 
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
