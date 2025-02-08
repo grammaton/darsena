@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="document">
+  <h1>{{ page.title }}</h1>
+  <h2>{{ page.author.name }} {{ page.author.surname }}</h2>
+
+  <div class="metadata">
+    <p>Categoria: {{ page.category }}</p>
+    <p>Data: {{ page.date | date: "%d/%m/%Y" }}</p>
+    <p>Tags: {{ page.tags | join: ", " }}</p>
+  </div>
+
+  <div class="description">
+    {{ content }}
+  </div>
+
+  <div class="pdf-viewer">
+    <embed src="{{ page.pdf_path }}" type="application/pdf" width="100%" height="600px">
+    <p>Posizione: {{ page.pdf_path }}</p>
+  </div>
+</div>
