@@ -34,6 +34,8 @@ elemento come `submodule` in `arsenale`.
 
 ----
 
+{% include git-info.html %}
+
 #### Vuoi contribuire? [E allora daje](https://github.com/grammaton/darsena)!
 
 <ul class="list-style-none">
@@ -46,5 +48,3 @@ elemento come `submodule` in `arsenale`.
 
 [^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 [parti da qui]: https://github.com/grammaton/bucintoro/generate
-
-{% include git-info.html %}

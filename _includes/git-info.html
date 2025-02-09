@@ -2,7 +2,8 @@
 {% assign timestamp = site.time | date: "%Y-%m-%d %H:%M:%S" %}
 
 <div class="git-info">
-  <h3>Informazioni Repository</h3>
+  <h3>git info</h3>
+  <h4>remoto</h4>
   <div class="git-details">
     {% if site.github.repository_url %}
     <p><strong>Repository:</strong>
@@ -10,27 +11,32 @@
     </p>
     {% endif %}
 
-    {% if site.github.branch %}
+    <!-- {% if site.github.branch %}
     <p><strong>Branch corrente:</strong> {{ site.github.branch }}</p>
-    {% endif %}
+    {% endif %} -->
 
     {% if site.github.build_revision %}
-    <p><strong>Ultimo commit:</strong> {{ site.github.build_revision | slice: 0, 7 }}</p>
+    <p><strong>Ultimo commit:</strong> {{ site.github.build_revision | slice: 0, 8 }}</p>
     {% endif %}
+    <h4>locale</h4>
+    <p><strong>Ultimo commit:</strong> {{ site.git.last_commit.hash }}</p>
+    <p><strong>Data:</strong> {{ site.git.last_commit.date }}</p>
+    <p><strong>Messaggio:</strong> {{ site.git.last_commit.message }}</p>
+    <!-- Branch corrente -->
+    <p><strong>Branch:</strong> {{ site.git.branch }}</p>
+    <!-- <p><strong>Stato build:</strong> {{ timestamp }}</p> -->
 
-    <p><strong>Stato build:</strong> {{ timestamp }}</p>
-
-    {% if site.github.releases %}
+    <!-- {% if site.github.releases %}
     <p><strong>Ultima release:</strong> {{ site.github.releases.first.tag_name }}</p>
-    {% endif %}
+    {% endif %} -->
 
-    {% if site.github.owner_name %}
+    <!-- {% if site.github.owner_name %}
     <p><strong>Proprietario:</strong> {{ site.github.owner_name }}</p>
-    {% endif %}
+    {% endif %} -->
 
-    {% if site.github.project_title %}
+    <!-- {% if site.github.project_title %}
     <p><strong>Progetto:</strong> {{ site.github.project_title }}</p>
-    {% endif %}
+    {% endif %} -->
 
     {% if site.github.latest_release %}
     <div class="release-info">

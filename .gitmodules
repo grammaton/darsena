@@ -7,15 +7,9 @@
 [submodule "sottomarini/st"]
 	path = sottomarini/st
 	url = https://gitlab.com/giuseppesilvi/st.git
-[submodule "sottomarini/ascolto-stereofonico"]
-	path = sottomarini/ascolto-stereofonico
-	url = https://gitlab.com/giuseppesilvi/ascolto-stereofonico.git
 [submodule "sottomarini/metp"]
 	path = sottomarini/metp
 	url = https://gitlab.com/giuseppesilvi/metp.git
-[submodule "sottomarini/musebib"]
-	path = sottomarini/musebib
-	url = https://gitlab.com/giuseppesilvi/musebib.git
 [submodule "arsenale/metafisica"]
 	path = arsenale/metafisica
 	url = https://github.com/grammaton/metafisica.git
@@ -23,5 +17,8 @@
 	path = arsenale/pto
 	url = https://github.com/grammaton/pto.git
 [submodule "arsenale/faust-libraries"]
-	path = arsenale/faust-libraries
+	path = sottomarini/faust-libraries
 	url = https://github.com/s-e-a-m/faust-libraries.git
+[submodule "sottomarini/dibi-bib"]
+	path = sottomarini/dibi-bib
+	url = https://github.com/grammaton/dibi-bib.git
