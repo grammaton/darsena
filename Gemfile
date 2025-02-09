@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "jekyll", "~> 4.4.1"
 gem "webrick"        # Necessario per Ruby >= 3
-gem "sass-embedded", "~> 1.63.6"  # Versione specifica per evitare incompatibilità
+gem "sass-embedded", "~> 1.83.4"  # Versione specifica per evitare incompatibilità
 gem "just-the-docs", "0.10.1"
 
 group :jekyll_plugins do
