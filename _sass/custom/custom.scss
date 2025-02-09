@@ -39,3 +39,52 @@
    padding: 1em;            /* padding interno */
    font-weight: 300;        /* leggero */
 }
+
+
+.documents-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    color: #666;
+    margin: 20px 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 10px 0;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .date {
+        color: #999;
+        margin-left: 10px;
+      }
+
+      .tags {
+        color: #666;
+        margin-left: 10px;
+        font-size: 0.9em;
+      }
+    }
+  }
+}

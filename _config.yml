@@ -54,3 +54,7 @@ scholar:
   details_link:   Details
 
   query: "@*"
+
+pdf_naming:
+  pattern: ':year-:author_surname-:category-:title'
+  sanitize: true
