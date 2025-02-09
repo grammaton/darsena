@@ -1,0 +1,101 @@
+<!-- _includes/git-info.html -->
+{% assign timestamp = site.time | date: "%Y-%m-%d %H:%M:%S" %}
+
+<div class="git-info">
+  <h3>Informazioni Repository</h3>
+  <div class="git-details">
+    {% if site.github.repository_url %}
+    <p><strong>Repository:</strong>
+      <a href="{{ site.github.repository_url }}">{{ site.github.repository_nwo }}</a>
+    </p>
+    {% endif %}
+
+    {% if site.github.branch %}
+    <p><strong>Branch corrente:</strong> {{ site.github.branch }}</p>
+    {% endif %}
+
+    {% if site.github.build_revision %}
+    <p><strong>Ultimo commit:</strong> {{ site.github.build_revision | slice: 0, 7 }}</p>
+    {% endif %}
+
+    <p><strong>Stato build:</strong> {{ timestamp }}</p>
+
+    {% if site.github.releases %}
+    <p><strong>Ultima release:</strong> {{ site.github.releases.first.tag_name }}</p>
+    {% endif %}
+
+    {% if site.github.owner_name %}
+    <p><strong>Proprietario:</strong> {{ site.github.owner_name }}</p>
+    {% endif %}
+
+    {% if site.github.project_title %}
+    <p><strong>Progetto:</strong> {{ site.github.project_title }}</p>
+    {% endif %}
+
+    {% if site.github.latest_release %}
+    <div class="release-info">
+      <p><strong>Ultima release:</strong></p>
+      <ul>
+        <li>Tag: {{ site.github.latest_release.tag_name }}</li>
+        <li>Data: {{ site.github.latest_release.published_at | date: "%Y-%m-%d" }}</li>
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+.git-info {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.git-info h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #eaecef;
+  padding-bottom: 0.5rem;
+}
+
+.git-details {
+  margin-top: 1rem;
+}
+
+.git-details p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.git-details strong {
+  color: #2c3e50;
+  margin-right: 0.5rem;
+}
+
+.git-details a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.git-details a:hover {
+  text-decoration: underline;
+}
+
+.release-info {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eaecef;
+}
+
+.release-info ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.release-info li {
+  margin: 0.25rem 0;
+}
+</style>

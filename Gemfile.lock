@@ -201,7 +201,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   jekyll (~> 4.4.1)
-  jekyll-github-metadata (>= 2.15)
+  jekyll-github-metadata
   jekyll-scholar
   just-the-docs (= 0.10.1)
   rake

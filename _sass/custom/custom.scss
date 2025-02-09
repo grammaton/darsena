@@ -88,21 +88,3 @@
     }
   }
 }
-
-.document {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px;
-
-  .metadata {
-    background: #f8f9fa;
-    padding: 5px;
-    margin: 10px 0;
-    border-radius: 5px;
-  }
-
-  .pdf-viewer {
-    margin: 20px 0;
-    border: 1px solid #ddd;
-  }
-}

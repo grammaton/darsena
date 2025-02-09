@@ -7,7 +7,7 @@ gem "just-the-docs", "0.10.1"
 
 group :jekyll_plugins do
   gem "jekyll-scholar"
-  gem "jekyll-github-metadata", ">= 2.15"
+  gem "jekyll-github-metadata"
 end
 
 group :development do
