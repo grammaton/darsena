@@ -87,53 +87,53 @@ module Jekyll
         level = $1.length
         text = $2
         case level
-        when 3 then "\\subsection{#{text}}"
-        when 2 then "\\section{#{text}}"
+        when 3 then "\\subsubsection{#{text}}"
+        when 2 then "\\subsection{#{text}}"
         when 1 then "\\section{#{text}}"
         end
       end
 
       # Conversioni speciali prima degli escape generali
-      content = content.gsub(/\[@(.*?)\]/, '\\\\cite{\1}')
+      # content = content.gsub(/\[@(.*?)\]/, '\\\\cite{\1}')
       content = convert_image_tags(content, site)
       content = convert_equations(content)
       content = convert_code_blocks(content)
 
       # Escape dei caratteri speciali LaTeX DOPO le altre conversioni
       latex_special_chars = {
-        '&' => '\\&',
-        '%' => '\\%',
-        '$' => '\\$',
-        '#' => '\\#',
-        '_' => '\\_',
-        '{' => '\\{',
-        '}' => '\\}',
-        '~' => '\\textasciitilde{}',
-        '^' => '\\textasciicircum{}',
-        '\\' => '\\textbackslash{}'
+        # '&' => '\\&',
+        # '%' => '\\%',
+        # '$' => '\\$',
+        # '#' => '\\#',
+        # '_' => '\\_',
+        # '{' => '\\{',
+        # '}' => '\\}',
+        # '~' => '\\textasciitilde{}',
+        # '^' => '\\textasciicircum{}',
+        # '\\' => '\\'
       }
 
       # Applica gli escape in un singolo passaggio
-      content = content.gsub(/[&%$#_{}~^\\]/) { |c| latex_special_chars[c] }
+      # content = content.gsub(/[&%$#_{}~^\\]/) { |c| latex_special_chars[c] }
 
       # Gestione caratteri accentati
       accented_chars = {
-        'è' => '\\`e',
-        'é' => "\\'e",
-        'à' => '\\`a',
-        'ì' => '\\`i',
-        'ò' => '\\`o',
-        'ù' => '\\`u',
-        'È' => '\\`E',
-        'É' => "\\'E",
-        'À' => '\\`A',
-        'Ì' => '\\`I',
-        'Ò' => '\\`O',
-        'Ù' => '\\`U'
+        # 'è' => '\\`e',
+        # 'é' => "\\'e",
+        # 'à' => '\\`a',
+        # 'ì' => '\\`i',
+        # 'ò' => '\\`o',
+        # 'ù' => '\\`u',
+        # 'È' => '\\`E',
+        # 'É' => "\\'E",
+        # 'À' => '\\`A',
+        # 'Ì' => '\\`I',
+        # 'Ò' => '\\`O',
+        # 'Ù' => '\\`U'
       }
 
       # Applica le sostituzioni degli accenti in un singolo passaggio
-      content = content.gsub(/[èéàìòùÈÉÀÌÒÙ]/) { |c| accented_chars[c] }
+      # content = content.gsub(/[èéàìòùÈÉÀÌÒÙ]/) { |c| accented_chars[c] }
 
       content
     end
@@ -178,45 +178,18 @@ module Jekyll
     end
 
     def convert_code_blocks(content)
-      content.gsub(/```(\w+)?\n(.*?)```/m) do |match|
-        language = $1 || 'text'
-        code = $2.strip
-
-        # Escape dei caratteri speciali nel codice
-        code_special_chars = {
-          '\\' => '\\textbackslash{}',
-          '{' => '\\{',
-          '}' => '\\}',
-          '$' => '\\$',
-          '&' => '\\&',
-          '#' => '\\#',
-          '_' => '\\_',
-          '^' => '\\textasciicircum{}',
-          '%' => '\\%'
-        }
-
-        code = code.gsub(/[\\{}$&#_^%]/) { |c| code_special_chars[c] }
-
-        <<~LATEX
-          \\begin{lstlisting}[language=#{language}]
-#{code}
-          \\end{lstlisting}
-        LATEX
-      end
+      content.gsub(/```(?:c\+\+)?(.*?)```/m, '\\begin{lstlisting}[language=c++]\1\\end{lstlisting}')
     end
 
     def convert_equations(content)
-      # Equazioni inline
-      content = content.gsub(/\$([^$]+)\$/, '\\(\1\\)')
-
-      # Equazioni display
-      content = content.gsub(/\$\$([^$]+)\$\$/, '\\[\1\\]')
-
-      # Converti displaymath in equation*
-      content = content.gsub(/\\begin\{displaymath\}/, '\\begin{equation*}')
-      content = content.gsub(/\\end\{displaymath\}/, '\\end{equation*}')
-
-      content
+      content.gsub(/\$\$(.*?)\$\$/) do |match|
+        equation = $1.strip
+        <<~LATEX
+        \\begin{equation}
+        #{equation}
+        \\end{equation}
+        LATEX
+      end
     end
   end
 end
