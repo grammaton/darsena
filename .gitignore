@@ -2,6 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,latex,jekyll
 
 _latex_temp/
+Gemfile.lock
 
 ### Jekyll ###
 _site/
