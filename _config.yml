@@ -73,3 +73,31 @@ pdf_generation:
       title: "Metafisica del Suono"
     - name: pto
       title: "Pensare Tetraedrico Oggi"
+
+collections:
+  cartografie:
+    output: true
+    permalink: /:collection/:path/
+  arsenale:
+    output: true
+    permalink: /:collection/:path/
+  sottomarini:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "cartografie"
+    values:
+      layout: "cartografia"
+  - scope:
+      path: ""
+      type: "arsenale"
+    values:
+      layout: "arsenale"
+  - scope:
+      path: ""
+      type: "sottomarini"
+    values:
+      layout: "sottomarino"
