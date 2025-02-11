@@ -16,6 +16,13 @@ math: mathjax
 # For copy button on code
 enable_copy_code_button: true
 
+exclude:
+  - _latex_temp
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - pdf
+
 plugins:
   - jekyll-scholar
   - jekyll-github-metadata
@@ -58,3 +65,11 @@ scholar:
 pdf_naming:
   pattern: ':year-:author_surname-:category-:title'
   sanitize: true
+
+pdf_generation:
+  enabled: true
+  projects:
+    - name: metafisica
+      title: "Metafisica del Suono"
+    - name: pto
+      title: "Pensare Tetraedrico Oggi"
