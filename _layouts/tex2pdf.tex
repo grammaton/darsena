@@ -12,6 +12,8 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
 
 % Configurazione dei listati di codice
 \lstset{
@@ -28,14 +30,17 @@
   backgroundcolor=\color{gray!10}
 }
 
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+  
 % Personalizzazione del documento
-\title{<%= title %>}
+\title{$title$}
 \author{Giuseppe Silvi}
 \date{\today}
 
 \begin{document}
 \maketitle
 
-<%= content %>
+$body$
 
 \end{document}
