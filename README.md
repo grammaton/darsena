@@ -41,6 +41,7 @@ Per clonare il repository con tutti i suoi submoduli:
 
 ```bash
 git clone --recursive git@github.com:grammaton/darsena.git
+cd darsena
 ```
 
 Se hai già clonato il repository senza i submoduli:
@@ -68,6 +69,7 @@ Il progetto include due script di utilità per la gestione dei branch e dei comm
 Questo script (`check-branches.sh`) verifica e crea il branch personale in tutti i repository:
 
 ```bash
+chmod +x check-branches.sh
 ./check-branches.sh xyz  # dove xyz sono le tue iniziali
 ```
 
