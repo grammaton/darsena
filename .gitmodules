@@ -1,24 +1,24 @@
 [submodule "sottomarini/canto-alla-durata"]
 	path = sottomarini/canto-alla-durata
-	url = https://gitlab.com/giuseppesilvi/canto-alla-durata.git
+	url = git@gitlab.com:giuseppesilvi/canto-alla-durata.git
 [submodule "sottomarini/pto"]
 	path = sottomarini/pto
-	url = https://gitlab.com/giuseppesilvi/pto.git
+	url = git@gitlab.com:giuseppesilvi/pto.git
 [submodule "sottomarini/st"]
 	path = sottomarini/st
-	url = https://gitlab.com/giuseppesilvi/st.git
+	url = git@gitlab.com:giuseppesilvi/st.git
 [submodule "sottomarini/metp"]
 	path = sottomarini/metp
-	url = https://gitlab.com/giuseppesilvi/metp.git
+	url = git@gitlab.com:giuseppesilvi/metp.git
 [submodule "arsenale/metafisica"]
 	path = arsenale/metafisica
-	url = https://github.com/grammaton/metafisica.git
+	url = git@github.com:grammaton/metafisica.git
 [submodule "arsenale/pto"]
 	path = arsenale/pto
-	url = https://github.com/grammaton/pto.git
+	url = git@github.com:grammaton/pto.git
 [submodule "arsenale/faust-libraries"]
 	path = sottomarini/faust-libraries
-	url = https://github.com/s-e-a-m/faust-libraries.git
+	url = git@github.com:s-e-a-m/faust-libraries.git
 [submodule "sottomarini/dibi-bib"]
 	path = sottomarini/dibi-bib
-	url = https://github.com/grammaton/dibi-bib.git
+	url = git@github.com:grammaton/dibi-bib.git
