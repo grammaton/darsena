@@ -22,3 +22,9 @@
 [submodule "sottomarini/dibi-bib"]
 	path = sottomarini/dibi-bib
 	url = git@github.com:grammaton/dibi-bib.git
+[submodule "arsenale/adui"]
+	path = arsenale/adui
+	url = git@github.com:Metabolismo/adui.git
+[submodule "arsenale/luz"]
+	path = arsenale/luz
+	url = git@github.com:Metabolismo/luz.git
