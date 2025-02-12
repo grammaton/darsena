@@ -84,6 +84,7 @@ Lo script:
 Questo script (`recursive-commit.sh`) gestisce i commit in modo ricorsivo su tutti i repository modificati:
 
 ```bash
+chmod +x recursive-commit.sh
 ./recursive-commit.sh xyz "messaggio di commit" [--push]
 ```
 
