@@ -3,6 +3,7 @@
 
 _latex_temp/
 Gemfile.lock
+tipografia/
 
 ### Jekyll ###
 _site/

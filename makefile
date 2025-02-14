@@ -5,7 +5,7 @@ ACTIVE_DIRS := $(AVAILABLE_DIRS)
 
 # Build configuration
 LATEX_TEMP := _latex_temp
-PDF_OUTPUT := pdf
+PDF_OUTPUT := tipografia
 
 # Make sure these directories exist
 $(shell mkdir -p $(LATEX_TEMP) $(PDF_OUTPUT))
