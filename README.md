@@ -153,6 +153,100 @@ git submodule update --init --recursive --remote
 git submodule status
 ```
 
+## Sistema di Compilazione
+
+Il progetto include un sistema di build basato su make per la gestione di documenti LaTeX e la generazione di PDF.
+
+### Prerequisiti
+
+1. **LaTeX**:
+   - Una distribuzione TeX Live completa
+   - Il pacchetto `gs-adonis` (fornito in `_layouts`)
+   - Pandoc per la conversione Markdown → LaTeX
+
+2. **Utilities**:
+   - Make
+   - MD5 (per il sistema di caching)
+
+### Struttura dei Progetti
+
+Ogni progetto nell'`arsenale` deve seguire questa struttura:
+```
+progetto/
+├── md/         # File sorgente in Markdown
+├── tex/        # File LaTeX aggiuntivi
+└── img/        # Immagini e altri asset
+```
+
+### Comandi Make
+
+1. **Compilazione completa**:
+```bash
+make
+```
+
+2. **Compilazione selettiva**:
+```bash
+ACTIVE_DIRS="progetto1 progetto2" make pdf
+```
+
+3. **Compilazione singolo progetto**:
+```bash
+ACTIVE_DIRS="progetto" make pdf
+```
+
+4. **Pulizia**:
+```bash
+make clean
+```
+
+### Sistema di Cache
+
+Il sistema utilizza un meccanismo di cache per evitare ricompilazioni non necessarie:
+- Monitora modifiche ai file sorgente
+- Traccia le dipendenze tra file
+- Ricompila solo quando necessario
+
+### File di Output
+
+I PDF generati vengono salvati in:
+```
+tipografia/
+└── nome-progetto.pdf
+```
+
+I file temporanei vengono gestiti in:
+```
+_latex_temp/
+```
+
+### Aggiungere un Nuovo Progetto
+
+1. Creare la struttura base:
+```bash
+make init PROJECT=nome-progetto
+```
+
+2. Aggiungere i file sorgente in `md/`
+3. Opzionalmente, aggiungere file LaTeX in `tex/` e immagini in `img/`
+
+### Best Practices
+
+1. **Organizzazione**:
+   - Mantenere i file Markdown in `md/` ordinati numericamente
+   - Usare nomi descrittivi per i file
+   - Documentare dipendenze speciali nel README del progetto
+
+2. **Compilazione**:
+   - Usare la compilazione selettiva per progetti grandi
+   - Verificare i log in caso di errori
+   - Mantenere pulita la directory con `make clean`
+
+3. **Gestione Assets**:
+   - Ottimizzare le immagini prima dell'inclusione
+   - Usare formati appropriati (PNG per diagrammi, JPG per foto)
+   - Mantenere una struttura coerente in `img/`
+
 ## Supporto
 
 Per problemi o domande, aprire una issue su GitHub: [grammaton/darsena/issues](https://github.com/grammaton/darsena/issues)
@@ -161,6 +255,5 @@ Per problemi o domande, aprire una issue su GitHub: [grammaton/darsena/issues](h
 
 Per creare una nuova nave dell'arsenale [parti da qui], poi aggiungi il nuovo
 elemento come `submodule` in `arsenale`.
-
 
 [parti da qui]: https://github.com/grammaton/bucintoro/generate

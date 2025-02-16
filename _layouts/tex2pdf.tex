@@ -1,20 +1,23 @@
-\documentclass[a4paper,11pt]{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[italian]{babel}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[hidelinks]{hyperref}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%!TEX root = 2024-gs-adonis-template.tex
+%
+\documentclass{gs-adonis}
+\usepackage[english,italian]{babel}
+%-------------------------------------------------------------------------------
+%--------------------------------------------------------------------- CUSTOMS -
+%-------------------------------------------------------------------------------
+\usepackage[
+  small,
+  labelfont=bf,
+  up,
+  textfont=it,
+  up
+  ]{caption}
+%
 \usepackage{grffile}
 \usepackage{braket}
 \usepackage{listings}
-\usepackage{color}
-\usepackage{xcolor}
-\usepackage{caption}
-\usepackage{subcaption}
-
 % Configurazione dei listati di codice
 \lstset{
   basicstyle=\ttfamily\small,
@@ -32,15 +35,70 @@
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-  
-% Personalizzazione del documento
-\title{$title$}
-\author{Giuseppe Silvi}
-\date{\today}
 
+\usepackage{paralist}
+\usepackage{subfigure}
+\usepackage{csquotes}
+\usepackage[style=ieee,backend=biber]{biblatex}
+\bibliography{includes/bibliografia.bib}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{hhline}
+\DeclareLabelname[movie]{
+    \field{director}
+    \field{producer}
+  }
+\usepackage{scrextend}
+\usepackage{calc}
+\usepackage{mwe}
+
+\usepackage{todonotes}
+\usepackage{hyperref}
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------------------ MAIN -
+%-------------------------------------------------------------------------------
+\title{$title$}
+\subtitle{Progetto di \emph{Dottorato di Ricerca in Composizione e Performance musicale}}
+\author{Giuseppe Silvi \textsuperscript{1}}
+% secondary details
+%\affiliation{\textsuperscript{1} Spherical Technologies SRLS}
+\correspondence{grammaton@me.com}
+\version{\today}
+% headers
+\runningauthor{Giuseppe Silvi}
+\runningtitle{$title$}
+%-------------------------------------------------------------------------------
+%--------------------------------------------------------------------- COMANDI -
+%-------------------------------------------------------------------------------
+%\newcommand{\studi}{\emph{Sei studi di Agamotto sul Tempo}}
+\newcommand{\tempo}{\emph{Tempo}}
+\newcommand{\canto}{\emph{canto alla durata}}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------- ABSTRACT -
+%-------------------------------------------------------------------------------
+\abstract{%
+  %\begin{addmargin*}[0pt]{-\marginparsep-\marginparwidth}
+  %\input{includes/abstract.txt}
+  %\end{addmargin*}
+}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------- DOCUMENT -
+%-------------------------------------------------------------------------------
 \begin{document}
 \maketitle
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------------ KEYWORDS ---
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section*{keywords}
+clarinetto, interpretazione, timbro, elettroacustica, aumentazione.
 
 $body$
 
+%\clearpage
+%\raggedright
+%\nocite{*}
+%%\bibliographystyle{unsrt}
+%\printbibliography
 \end{document}
