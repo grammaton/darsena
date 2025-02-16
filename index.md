@@ -10,27 +10,19 @@ nav_order: 1
 
 ## approdo sicuro
 
-```
-git clone --recurse-submodules https://github.com/grammaton/darsena.git
+```bash
+git clone --recursive git@github.com:grammaton/darsena.git
+cd darsena
 ```
 
 Alcuni `submodules` sono privati, può accedere solamente chi può accedere.
+
+Una guida passo passo per la gestione del Porto [la trovi qui].
 
 ## armatore
 
 Per creare una nuova nave dell'arsenale [parti da qui], poi aggiungi il nuovo
 elemento come `submodule` in `arsenale`.
-
-## to do list
-
-1. librerie SEAM
-2. faust.ide
-3. latex
-4. test hub pubblico/privato
-5. scan biblioteca
-6. gestione catalogo
-7. font alegreya
-8. pagina glossario
 
 ----
 
@@ -47,4 +39,5 @@ elemento come `submodule` in `arsenale`.
 </ul>
 
 [^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+[la trovi qui]: https://github.com/grammaton/darsena
 [parti da qui]: https://github.com/grammaton/bucintoro/generate
