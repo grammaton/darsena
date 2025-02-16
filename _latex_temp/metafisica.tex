@@ -1,20 +1,23 @@
-\documentclass[a4paper,11pt]{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[italian]{babel}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[hidelinks]{hyperref}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%!TEX root = 2024-gs-adonis-template.tex
+%
+\documentclass{gs-adonis}
+\usepackage[english,italian]{babel}
+%-------------------------------------------------------------------------------
+%--------------------------------------------------------------------- CUSTOMS -
+%-------------------------------------------------------------------------------
+\usepackage[
+  small,
+  labelfont=bf,
+  up,
+  textfont=it,
+  up
+  ]{caption}
+%
 \usepackage{grffile}
 \usepackage{braket}
 \usepackage{listings}
-\usepackage{color}
-\usepackage{xcolor}
-\usepackage{caption}
-\usepackage{subcaption}
-
 % Configurazione dei listati di codice
 \lstset{
   basicstyle=\ttfamily\small,
@@ -32,16 +35,96 @@
 
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-  
-% Personalizzazione del documento
-\title{metafisica}
-\author{Giuseppe Silvi}
-\date{\today}
 
+\usepackage{paralist}
+\usepackage{subfigure}
+\usepackage{csquotes}
+\usepackage[style=ieee,backend=biber]{biblatex}
+\bibliography{includes/bibliografia.bib}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{hhline}
+\DeclareLabelname[movie]{
+    \field{director}
+    \field{producer}
+  }
+\usepackage{scrextend}
+\usepackage{calc}
+\usepackage{mwe}
+
+\usepackage{todonotes}
+\usepackage{hyperref}
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------------------ MAIN -
+%-------------------------------------------------------------------------------
+\title{metafisica}
+\subtitle{Progetto di \emph{Dottorato di Ricerca in Composizione e Performance musicale}}
+\author{Giuseppe Silvi \textsuperscript{1}}
+% secondary details
+%\affiliation{\textsuperscript{1} Spherical Technologies SRLS}
+\correspondence{grammaton@me.com}
+\version{\today}
+% headers
+\runningauthor{Giuseppe Silvi}
+\runningtitle{metafisica}
+%-------------------------------------------------------------------------------
+%--------------------------------------------------------------------- COMANDI -
+%-------------------------------------------------------------------------------
+%\newcommand{\studi}{\emph{Sei studi di Agamotto sul Tempo}}
+\newcommand{\tempo}{\emph{Tempo}}
+\newcommand{\canto}{\emph{canto alla durata}}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------- ABSTRACT -
+%-------------------------------------------------------------------------------
+\abstract{%
+  %\begin{addmargin*}[0pt]{-\marginparsep-\marginparwidth}
+  %\input{includes/abstract.txt}
+  %\end{addmargin*}
+}
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------- DOCUMENT -
+%-------------------------------------------------------------------------------
 \begin{document}
 \maketitle
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------------ KEYWORDS ---
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section*{keywords}
+clarinetto, interpretazione, timbro, elettroacustica, aumentazione.
 
-\section{l'esercizio come agon}\label{lesercizio-come-agon}
+\begin{quote}
+Polemos armonizza in sé, ma tale armonia non è affatto semplicemente
+Pace; l'Armonia è solo di opposti, che tali rimangono nel costituire
+l'unità della loro relazione. Unità concreta, determinata, nient'affatto
+riduzione delle differenze che la costituiscono in un neutro
+\emph{Unum}, risoluzione astratta del loro dissidio. {[}p.25{]}
+\end{quote}
+
+\begin{quote}
+Chi impone il limite tra giorno e notte, dèi e uomini? Chi stabilisce
+questi confini e crea, di conseguenza, questi \emph{con-finanti} e la
+loro armonia, cioè \emph{connessione}? Polemos - che si esprime nel
+Logos, che Eraclito ascolta e fa suo. E lo stesso Polemos, poi, in
+quanto sovrano, stabilisce le parti, distribuisce i ruoli, costituisce,
+cioè, il \emph{Nomos}. Pone i distinti e \_impone\_loro la legge\ldots{}
+{[}p.26{]}
+\end{quote}
+
+\begin{quote}
+Tuttavia, nessuna ``leggitimità'' può cancellare quell'originario tratto
+\emph{impositivo} del potere di Polemos per cui essa fa si che i
+distinti siano, ek-sistano, per cui esso impone loro i confini in base
+ai quali si oppongono. Come fondare questa originaria \emph{violenza?}
+Essa appare come fondamento in nessun modo a sua volta fondabile,
+\emph{s-fondo} di ogni ulteriore discorso; \emph{Anánke}, necessario
+così accada, pre-potente rispetto alla stessa potenza di Polemos;
+Polemos infatti opera soltanto in base al pre-potente Principio per cui
+\emph{mostrare, produrre, manifestare} non possono significare se non
+che i \emph{distinti-opposti} esistono e che all'uno è proibito essere
+l'altro. {[}p.26{]} \# l'esercizio come agon
+\end{quote}
 
 Prima di entrare nella tana del Bianconiglio vorrei formalizzare un
 esercizio di pensiero allo scopo di esplsorare la natura della
@@ -1221,4 +1304,9 @@ Temperley, D. (2007). Music and Probability. MIT Press.
 Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins
 of the classical. Reviews of Modern Physics, 75(3).
 
+%\clearpage
+%\raggedright
+%\nocite{*}
+%%\bibliographystyle{unsrt}
+%\printbibliography
 \end{document}
