@@ -4,6 +4,7 @@
 _latex_temp/
 Gemfile.lock
 tipografia/
+.cache
 
 ### Jekyll ###
 _site/
