@@ -27,6 +27,9 @@ plugins:
   - jekyll-scholar
   - jekyll-github-metadata
 
+sass:
+  sass_dir: _sass
+  
 callouts:
   glossario:
     title: Glossario
