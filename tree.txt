@@ -18,18 +18,12 @@
 │   ├── metafisica.log
 │   ├── metafisica.out
 │   ├── metafisica.run.xml
-│   ├── metafisica.tex
-│   ├── pto.aux
-│   ├── pto.bcf
-│   ├── pto.log
-│   ├── pto.out
-│   ├── pto.pdf
-│   ├── pto.run.xml
-│   └── pto.tex
+│   └── metafisica.tex
 ├── _layouts
 │   ├── biblio.html
 │   ├── ciccio.html
 │   ├── document.html
+│   ├── gs-adonis.cls
 │   ├── mathjax.html
 │   ├── tex2pdf.tex
 │   └── tex2pdf_old.tex
@@ -54,6 +48,8 @@
 │   │   ├── makefile
 │   │   ├── md
 │   │   │   ├── 0100-premessa.md
+│   │   │   ├── 0110-agon.md
+│   │   │   ├── 0120-memoria.md
 │   │   │   ├── 0200-genealogia.md
 │   │   │   ├── 0300-lichtung.md
 │   │   │   ├── 0400-movimento.md
@@ -84,10 +80,9 @@
 │       ├── index.md
 │       ├── latex
 │       ├── makefile
-│       ├── md
-│       │   ├── 0100-percorso.md
-│       │   └── pandocpto.md
-│       └── tex
+│       └── md
+│           ├── 0100-percorso.md
+│           └── pandocpto.md
 ├── assets
 │   └── js
 │       └── mathjax-script-type.js
@@ -860,16 +855,6 @@
 │   │   │               └── cad-maknongan-partitura.tex
 │   │   ├── submodules
 │   │   │   └── wb-tdme-simboli
-│   │   │       ├── README.md
-│   │   │       ├── doc
-│   │   │       ├── resources
-│   │   │       │   └── WB-TDME-SIMBOLI.pdf
-│   │   │       └── src
-│   │   │           ├── 48v.tex
-│   │   │           ├── WB-TDME-SIMBOLI.pdf
-│   │   │           ├── WB-TDME-SIMBOLI.tex
-│   │   │           ├── definizioni.tex
-│   │   │           └── stile.tex
 │   │   └── tree.txt
 │   ├── dibi-bib
 │   │   ├── LICENSE
@@ -1378,24 +1363,7 @@
 │   │   │       └── oscillatori.tex
 │   │   ├── bibliografie
 │   │   │   ├── ambib
-│   │   │   │   ├── LICENSE
-│   │   │   │   ├── README.md
-│   │   │   │   ├── adriaensen-fons.bib
-│   │   │   │   ├── gerzon-michael.bib
-│   │   │   │   ├── malham-dave.bib
-│   │   │   │   └── zotter-franz.bib
 │   │   │   └── musebib
-│   │   │       ├── LICENSE
-│   │   │       ├── README.md
-│   │   │       ├── microfoni.bib
-│   │   │       ├── no.bib
-│   │   │       ├── nono-luigi.bib
-│   │   │       ├── novecento.bib
-│   │   │       ├── ottocento.bib
-│   │   │       ├── reich-steve.bib
-│   │   │       ├── riverberi.bib
-│   │   │       ├── score.bib
-│   │   │       └── tech.bib
 │   │   ├── faust
 │   │   │   ├── 100
 │   │   │   │   ├── 0101-CMR.dsp
@@ -1518,32 +1486,6 @@
 │   │   │   │   ├── cage1.pdf
 │   │   │   │   └── cage2.pdf
 │   │   │   ├── microphone-polar-patterns
-│   │   │   │   ├── LICENSE
-│   │   │   │   ├── PDF
-│   │   │   │   │   ├── allplot.pdf
-│   │   │   │   │   ├── cardioid.pdf
-│   │   │   │   │   ├── fig8.pdf
-│   │   │   │   │   ├── hypercardioid.pdf
-│   │   │   │   │   ├── nondirectional.pdf
-│   │   │   │   │   ├── omni.pdf
-│   │   │   │   │   ├── polar.pdf
-│   │   │   │   │   ├── polarlog.pdf
-│   │   │   │   │   ├── polarlog2.pdf
-│   │   │   │   │   ├── subcardioid.pdf
-│   │   │   │   │   └── supercardioid.pdf
-│   │   │   │   ├── README.md
-│   │   │   │   └── TEX
-│   │   │   │       ├── allplot.tex
-│   │   │   │       ├── cardioid.tex
-│   │   │   │       ├── fig8.tex
-│   │   │   │       ├── hypercardioid.tex
-│   │   │   │       ├── nondirectional.tex
-│   │   │   │       ├── omni.tex
-│   │   │   │       ├── polar.tex
-│   │   │   │       ├── polarlog.tex
-│   │   │   │       ├── polarlog2.tex
-│   │   │   │       ├── subcardioid.tex
-│   │   │   │       └── supercardioid.tex
 │   │   │   ├── nono
 │   │   │   │   ├── hph
 │   │   │   │   │   ├── ab_v_01.jpg
@@ -1563,39 +1505,6 @@
 │   │   │   ├── sr4.png
 │   │   │   ├── srmean.png
 │   │   │   ├── stereo-pairs-polar-patterns
-│   │   │   │   ├── LICENSE
-│   │   │   │   ├── PDF
-│   │   │   │   │   ├── ORTF.pdf
-│   │   │   │   │   ├── blumlein.pdf
-│   │   │   │   │   ├── doublemidside.pdf
-│   │   │   │   │   ├── ms-cardio-sdmx.pdf
-│   │   │   │   │   ├── ms-cardio.pdf
-│   │   │   │   │   ├── ms-fig8-sdmx.pdf
-│   │   │   │   │   ├── ms-fig8.pdf
-│   │   │   │   │   ├── ms-omni-sdmx.pdf
-│   │   │   │   │   ├── ms-omni.pdf
-│   │   │   │   │   ├── planarambisonic.pdf
-│   │   │   │   │   ├── xy120.pdf
-│   │   │   │   │   ├── xy135.pdf
-│   │   │   │   │   ├── xy180.pdf
-│   │   │   │   │   └── xy90.pdf
-│   │   │   │   ├── README.md
-│   │   │   │   ├── TEX
-│   │   │   │   │   ├── ORTF.tex
-│   │   │   │   │   ├── blumlein.tex
-│   │   │   │   │   ├── doublemidside.tex
-│   │   │   │   │   ├── ms-cardio-sdmx.tex
-│   │   │   │   │   ├── ms-cardio.tex
-│   │   │   │   │   ├── ms-fig8-sdmx.tex
-│   │   │   │   │   ├── ms-fig8.tex
-│   │   │   │   │   ├── ms-omni-sdmx.tex
-│   │   │   │   │   ├── ms-omni.tex
-│   │   │   │   │   ├── planarambisonic.tex
-│   │   │   │   │   ├── xy120.tex
-│   │   │   │   │   ├── xy135.tex
-│   │   │   │   │   ├── xy180.tex
-│   │   │   │   │   └── xy90.tex
-│   │   │   │   └── _config.yml
 │   │   │   ├── steve-reich-pendulum-music.gif
 │   │   │   ├── stockhausen
 │   │   │   │   ├── 23632330_10215401890947123_857335553485570045_o.jpg
@@ -1986,4 +1895,4 @@
 │   └── metafisica.pdf
 └── tree.txt
 
-246 directories, 1741 files
+238 directories, 1658 files
